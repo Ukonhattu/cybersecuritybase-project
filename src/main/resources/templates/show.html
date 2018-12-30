@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>All entries</title>
+    </head>
+    <body>
+        <h1>Here are all entries :)</h1>
+        <table>
+            <tr th:each="entries : ${entries}">
+                <td th:utext="${entries.name}"/>
+                <td th:utext="${entries.address}"/>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>
