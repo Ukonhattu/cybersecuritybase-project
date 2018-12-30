@@ -47,7 +47,7 @@ public class SignupController {
     }
 
     @RequestMapping(value = "/admin")
-    public String adminPanel(Model model, @PathVariable String p) {
+    public String adminPanel(Model model) {
 
         List<Signup> entries = signupRepository.findAll();
 
